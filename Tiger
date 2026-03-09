@@ -1,0 +1,25 @@
+ public class Tiger extends Cat{
+        int eat;
+
+        public void Tiger(int eat)
+        {
+            eat=9;
+        }
+
+        @Override
+        public String name() {
+            return "Лева";
+        }
+
+        @Override
+        public String date() {
+            return "12.03.2017";
+        }
+
+        @Override
+        public int animalId() {
+            return 3;
+        }
+
+        
+    }
