@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+    public  class Cat extends  Animal {
+        Scanner sc = new Scanner(System.in);
+        String color;
+
+
+        public Cat(String color) {
+            super();
+        }
+
+        public void eyeColor(String color)
+        {
+            color=sc.findInLine(color);
+        }
+        @Override
+        public String name() {
+            return "Барсик";
+        }
+
+        @Override
+        public String date() {
+            return "10.11.2022";
+        }
+
+        @Override
+        public int animalId() {
+            return 1;
+        }
+
+        public Cat() {
+        }
+
+        public void printInfo()
+        {
+            System.out.println("Кот: " + "имя: " + name() + ", id: " + animalId() + ", дата рождения: " + date());
+        }
+    }
