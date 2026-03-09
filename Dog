@@ -1,0 +1,27 @@
+ public  class Dog extends Animal{
+        String size;
+
+        public Dog()
+        {
+            super();
+        }
+
+        @Override
+        public String name() {
+            return "Шарик";
+        }
+
+        @Override
+        public String date() {
+            return "12.06.2019";
+        }
+
+        @Override
+        public int animalId() {
+            return 2;
+        }
+
+        public void printInfo()
+        {
+            System.out.println("Собака: " + "имя: " + name() + ", id: " + animalId() + ", дата рождения: " + date());
+        }
