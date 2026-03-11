@@ -1,18 +1,20 @@
-import java.util.Scanner;
-
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Cat cat = new Cat("голобой");
+        Animal animalCat = new Animal(1, "Барсик", "12.12.2024");
+        cat.printInfoEyes();
+        animalCat.printInfo();
+        System.out.println();
 
-        Animal cat = new Cat();
-        cat.printInfo();
-        Animal dog = new Dog();
-        dog.printInfo();
-        Cat tiger = new Cat();
+        Dog dog = new Dog(15.6);
+        Animal animalDog= new Animal(2, "Фунтик", "18.04.2023");
+        dog.printInfoWeight();
+        animalDog.printInfo();
+        System.out.println();
+
+        Tiger tiger = new Tiger(8);
+        Animal animalTiger = new Animal(3, "Миша", "09.10.2018");
         tiger.printInfo();
-
-
-
+        animalTiger.printInfo();
     }
 }
