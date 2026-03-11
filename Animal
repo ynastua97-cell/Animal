@@ -1,14 +1,23 @@
-public abstract class Animal {
+public  class Animal {
+    int id;
+    String name;
+    String bDay;
 
-
-        public  abstract String name();
-        public abstract String date();
-        public abstract int animalId();
-
-        public void printInfo()
-        {
-            System.out.println("Имя: " + name() + ", id: " + animalId() + ", дата рождения: " + date() );
-        }
+    Animal(int id, String name, String bDay) {
+        this.bDay = bDay;
+        this.id = id;
+        this.name = name;
     }
+
+    Animal ()
+    {
+
+    }
+
+    public void printInfo()
+    {
+        System.out.println("Имя животного: " +name +  ", id животного: "+ id + ", день рождения животного: " + bDay + ".");
+    }
+}
 
 
