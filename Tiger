@@ -1,25 +1,19 @@
- public class Tiger extends Cat{
-        int eat;
+public class Tiger extends Cat {
+    int countEat;
 
-        public void Tiger(int eat)
-        {
-            eat=9;
-        }
-
-        @Override
-        public String name() {
-            return "Лева";
-        }
-
-        @Override
-        public String date() {
-            return "12.03.2017";
-        }
-
-        @Override
-        public int animalId() {
-            return 3;
-        }
-
-        
+    Tiger (int countEat)
+    {
+        this.countEat=countEat;
     }
+
+    Tiger ()
+    {
+
+    }
+
+    public  void printInfo()
+    {
+        System.out.println("Количество мяса, необходимое тигру в день: " + countEat + " килограмм.");
+    }
+}
+
