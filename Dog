@@ -1,27 +1,19 @@
- public  class Dog extends Animal{
-        String size;
+public class Dog extends Animal {
+    double weight;
 
-        public Dog()
-        {
-            super();
-        }
+    Dog (double weight)
+    {
+        this.weight=weight;
+    }
 
-        @Override
-        public String name() {
-            return "Шарик";
-        }
+    Dog()
+    {
+        super();
+    }
 
-        @Override
-        public String date() {
-            return "12.06.2019";
-        }
+    public void printInfoWeight()
+    {
+        System.out.println("Вес собаки: " + weight);
+    }
 
-        @Override
-        public int animalId() {
-            return 2;
-        }
-
-        public void printInfo()
-        {
-            System.out.println("Собака: " + "имя: " + name() + ", id: " + animalId() + ", дата рождения: " + date());
-        }
+}
